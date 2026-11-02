@@ -90,12 +90,38 @@
   color:#8c8c89;
   margin-top:12px;
 }
+.payment-actions{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin:15px 0 25px;
+  flex-wrap:wrap;
+}
+.payment-actions a.pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:11px;
+  font-weight:800;
+  text-transform:uppercase;
+  padding:10px 16px;
+  white-space:nowrap;
+}
 @media(max-width:700px){
   .form-grid{
     grid-template-columns:1fr;
   }
   .form-grid .full{
     grid-column:span 1;
+  }
+  .payment-actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .payment-actions a.pill{
+    justify-content:center;
+    white-space:normal;
+    text-align:center;
   }
 }
 
