@@ -3,6 +3,56 @@
    Site logic: js/main.js
    ============================================================ */
 
+/* ORDER FORM — WHATSAPP */
+const orderProducts = [
+  { name: "Full Sleeve Shirt", price: "৳ 1,850" },
+  { name: "Half Sleeve Shirt", price: "৳ 1,650" },
+  { name: "Full Sleeve T-Shirt", price: "৳ 1,250" },
+  { name: "Half Sleeve T-Shirt", price: "৳ 990" },
+  { name: "Hoodie", price: "৳ 2,200" }
+];
+
+const orderProductEl = document.getElementById("orderProduct");
+if(orderProductEl){
+  orderProducts.forEach(p=>{
+    const opt = document.createElement("option");
+    opt.value = p.name;
+    opt.textContent = `${p.name} — ${p.price}`;
+    orderProductEl.appendChild(opt);
+  });
+}
+
+const orderForm = document.getElementById("whatsappOrderForm");
+if(orderForm){
+  orderForm.onsubmit = e => {
+    e.preventDefault();
+    const name = document.getElementById("orderName").value.trim();
+    const phone = document.getElementById("orderPhone").value.trim();
+    const address = document.getElementById("orderAddress").value.trim();
+    const product = document.getElementById("orderProduct").value;
+    const size = document.getElementById("orderSize").value;
+
+    if(!name || !phone || !address || !product || !size){
+      alert("Please fill in all required fields.");
+      return;
+    }
+
+    const msg = `*New Order — EUNOIA*\n\nCustomer: ${name}\nPhone: ${phone}\nAddress: ${address}\nProduct: ${product}\nSize: ${size}\n\nPlease confirm price and availability.`;
+    const url = "https://wa.me/8801708331114?text=" + encodeURIComponent(msg);
+    window.open(url, "_blank");
+  };
+}
+
+/* GREETING — time of day */
+const greetingMsg = document.getElementById("greeting-msg");
+if(greetingMsg){
+  const h = new Date().getHours();
+  let g = "Good Morning";
+  if(h >= 12 && h < 17) g = "Good Afternoon";
+  else if(h >= 17) g = "Good Evening";
+  greetingMsg.textContent = g + "!";
+}
+
 "use strict";
 
 /* ---------- Data ---------- */

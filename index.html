@@ -68,6 +68,14 @@
     <img class="mini" src="assets/tshirt.jpg" alt="Black T-shirt on hanger">
   </section>
 
+  <!-- ================= GREETING ================= -->
+  <section class="greeting" id="greeting">
+    <div class="greeting-content">
+      <h1 id="greeting-msg">Good Morning!</h1>
+      <p>Welcome to EUNOIA — Wear your own universe</p>
+    </div>
+  </section>
+
   <!-- ================= SHOWCASE / SLIDER ================= -->
   <section class="showcase" id="products">
     <div class="moon-wrap">
@@ -99,6 +107,53 @@
     <div class="new-title">OUR NEWEST<br>PRODUCTS <span style="color:#708d88">↗</span></div>
     <div id="new1"></div>
     <div id="new2"></div>
+  </section>
+
+  <!-- ================= ORDER FORM ================= -->
+  <section class="order-form" id="order-form">
+    <div class="order-container">
+      <h2>Place Your Order</h2>
+      <p>Fill in your details and we'll confirm via WhatsApp.</p>
+      <form id="whatsappOrderForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="orderProduct">Product Name <span class="req">*</span></label>
+            <select id="orderProduct" required>
+              <option value="">Select a product</option>
+              <option value="Full Sleeve Shirt">Full Sleeve Shirt — ৳ 1,850</option>
+              <option value="Half Sleeve Shirt">Half Sleeve Shirt — ৳ 1,650</option>
+              <option value="Full Sleeve T-Shirt">Full Sleeve T-Shirt — ৳ 1,250</option>
+              <option value="Half Sleeve T-Shirt">Half Sleeve T-Shirt — ৳ 990</option>
+              <option value="Hoodie">Hoodie — ৳ 2,200</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="orderSize">Size <span class="req">*</span></label>
+            <select id="orderSize" required>
+              <option value="">Select size</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="orderName">Customer Name <span class="req">*</span></label>
+            <input type="text" id="orderName" placeholder="Your full name" required maxlength="50">
+          </div>
+          <div class="form-group">
+            <label for="orderPhone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="orderPhone" placeholder="01708 331114" required maxlength="15">
+          </div>
+          <div class="form-group full">
+            <label for="orderAddress">Address <span class="req">*</span></label>
+            <textarea id="orderAddress" placeholder="House, Road, Area, City" required rows="3" maxlength="200"></textarea>
+          </div>
+        </div>
+        <button type="submit" class="pill yellow" id="orderSubmitBtn">SEND ORDER VIA WHATSAPP ↗</button>
+        <p class="form-note">Your order will be sent to WhatsApp for confirmation. Prices are examples — we'll confirm before payment.</p>
+      </form>
+    </div>
   </section>
 
   <!-- ================= CONTACT / END ================= -->

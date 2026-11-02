@@ -3,6 +3,102 @@
    Stylesheet: css/style.css
    ============================================================ */
 
+/* Greeting */
+.greeting{
+  background:#f7f7f5;
+  padding:40px 6%;
+  text-align:center;
+  border-bottom:1px solid #ddd;
+}
+.greeting-content h1{
+  font-size:clamp(28px,4vw,44px);
+  font-weight:900;
+  letter-spacing:-.06em;
+  margin:0 0 10px;
+  text-transform:uppercase;
+}
+.greeting-content p{
+  font-size:11px;
+  color:#929592;
+  text-transform:uppercase;
+  margin:0;
+}
+
+/* Order form */
+.order-form{
+  padding:40px 6% 80px;
+  background:#efefed;
+}
+.order-container{
+  max-width:700px;
+  margin:0 auto;
+}
+.order-form h2{
+  font-size:clamp(24px,3vw,36px);
+  font-weight:900;
+  letter-spacing:-.06em;
+  text-align:center;
+  text-transform:uppercase;
+  margin:0 0 8px;
+}
+.order-form p{
+  text-align:center;
+  color:#929592;
+  font-size:11px;
+  margin:0 0 30px;
+  text-transform:uppercase;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+.form-grid .full{
+  grid-column:span 2;
+}
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+.form-group label{
+  font-size:10px;
+  font-weight:800;
+  text-transform:uppercase;
+  color:#292a2a;
+}
+.form-group .req{
+  color:#d00;
+}
+.form-group select,
+.form-group input,
+.form-group textarea{
+  width:100%;
+  padding:12px;
+  border:1px solid #ccc;
+  background:#fff;
+  border-radius:4px;
+  font-size:12px;
+  font:inherit;
+}
+.form-group select::-ms-expand{
+  display:none;
+}
+.form-note{
+  text-align:center;
+  font-size:9px;
+  color:#8c8c89;
+  margin-top:12px;
+}
+@media(max-width:700px){
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+  .form-grid .full{
+    grid-column:span 1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
