@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EUNOIA — Wear your own universe</title>
+
+  <meta name="description" content="EUNOIA — comfortable everyday wear made for you. Shirts, t-shirts and hoodies. Order on WhatsApp, pay with bKash or Nagad.">
+  <meta name="theme-color" content="#efefed">
+  <meta name="author" content="EUNOIA">
+
+  <!-- Social / marketing preview (Open Graph + Twitter) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EUNOIA">
+  <meta property="og:title" content="EUNOIA — Wear your own universe">
+  <meta property="og:description" content="Good clothes for good days. Shirts, tees and hoodies made for your everyday universe.">
+  <meta property="og:image" content="assets/tshirt.jpg">
+  <meta property="og:url" content="https://USERNAME.github.io/eunoia/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EUNOIA — Wear your own universe">
+  <meta name="twitter:description" content="Good clothes for good days. Shirts, tees and hoodies made for your everyday universe.">
+  <meta name="twitter:image" content="assets/tshirt.jpg">
+
+  <!-- Canonical: replace USERNAME after you publish -->
+  <link rel="canonical" href="https://USERNAME.github.io/eunoia/">
+
+  <link rel="icon" href="assets/facebook.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- ================= NAV ================= -->
+  <nav class="nav">
+    <div class="navlinks">
+      <a href="#products">SHOP</a>
+      <a href="#new">NEW ARRIVALS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+    <a href="#" class="logo">EUNOIA</a>
+    <div class="navend">
+      <a class="circle" href="#products" aria-label="Shop products">↗</a>
+    </div>
+  </nav>
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro">
+    <div>
+      <div class="overline">MADE FOR YOU</div>
+      <h1 class="hero-title"><span>GOOD</span><br>STYLE</h1>
+      <p>Comfortable pieces for your everyday universe. Find your fit, make it yours.</p>
+      <a class="pill yellow" href="#products">Shop collection</a>
+      <a class="pill" href="#new">Explore</a>
+    </div>
+
+    <div>
+      <div class="headline">Check in<br>our new<br>collection<br>for everyday<br>activity</div>
+      <div class="rating">
+        <span class="stars">✦ ✦ ✦ ✦ ✦</span>
+        <span>Made for<br>your everyday</span>
+      </div>
+    </div>
+
+    <img class="mini" src="assets/tshirt.jpg" alt="Black T-shirt on hanger">
+  </section>
+
+  <!-- ================= SHOWCASE / SLIDER ================= -->
+  <section class="showcase" id="products">
+    <div class="moon-wrap">
+      <img class="moon" src="assets/moon-cut.jpg" alt="A full moon">
+      <div class="moon-labels">
+        <span>
+          <button id="prev" aria-label="Previous products">⟵</button>
+          &nbsp; YOUR
+        </span>
+        <span>
+          UNIVERSE &nbsp;
+          <button id="next" aria-label="Next products">⟶</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="track" id="track"></div>
+    </div>
+
+    <div class="all">
+      <a class="pill" href="#new">See all products</a>
+    </div>
+    <p class="sample">Images and prices are examples. Please confirm product details and availability on WhatsApp.</p>
+  </section>
+
+  <!-- ================= NEW ARRIVALS ================= -->
+  <section class="new" id="new">
+    <div class="new-title">OUR NEWEST<br>PRODUCTS <span style="color:#708d88">↗</span></div>
+    <div id="new1"></div>
+    <div id="new2"></div>
+  </section>
+
+  <!-- ================= CONTACT / END ================= -->
+  <section class="end" id="contact">
+    <div class="logo">EUNOIA</div>
+    <h2>GET YOUR<br>FAVORITE WEAR<br>AND MAKE IT<br>YOURS.</h2>
+    <p>GOOD CLOTHES FOR GOOD DAYS.<br>LET'S FIND SOMETHING YOU'LL LOVE.</p>
+
+    <a class="pill yellow" href="https://wa.me/8801708331114" target="_blank" rel="noopener">
+      <img class="wa-icon" src="assets/whatsapp.png" alt=""> CHAT WITH US ↗
+    </a>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1CEXaVhsyC/" target="_blank" rel="noopener">
+        <img src="assets/facebook.png" alt="">Facebook
+      </a>
+      <a href="https://www.instagram.com/eunoia69x?psln=YXAyNGRrYmdlbGhz" target="_blank" rel="noopener">
+        <img src="assets/instagram.png" alt="">Instagram
+      </a>
+    </div>
+
+    <div class="payments">
+      <span>PAY WITH</span>
+      <span class="payment-logo"><img src="assets/bkash.png" alt="bKash"></span>
+      <span class="payment-logo"><img src="assets/nagad.png" alt="Nagad"></span>
+    </div>
+
+    <p>bKash &amp; Nagad: 01708331114<br>Confirm payment details before sending.</p>
+  </section>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <strong>EUNOIA</strong>
+  <span>HOME &nbsp;&nbsp;&nbsp; PRODUCT &nbsp;&nbsp;&nbsp; CONTACT</span>
+  <span>YOUR STYLE. YOUR UNIVERSE.</span>
+</footer>
+
+<!-- ================= PRODUCT MODAL ================= -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="title">
+    <button class="close" aria-label="Close">×</button>
+
+    <div class="dialog-img">
+      <img id="image" alt="">
+    </div>
+
+    <div class="details">
+      <div class="label">EUNOIA / COLLECTION</div>
+      <h2 id="title"></h2>
+      <div class="price" id="price"></div>
+      <p>Designed for easy days and your own unique style. Select your size and color, then chat with us to confirm your order.</p>
+
+      <div class="label">SELECT SIZE</div>
+      <div class="choices" id="sizes"></div>
+
+      <div class="label">SELECT COLOR</div>
+      <div class="choices" id="colors"></div>
+
+      <div class="product-details">
+        <b>PRODUCT DETAILS</b><br>
+        Fabric and care: Please confirm with us on WhatsApp.<br>
+        Availability and price are subject to confirmation.
+      </div>
+
+      <div class="label">CHOOSE WHATSAPP NUMBER</div>
+      <select class="phone" id="phone">
+        <option value="8801708331114">01708331114</option>
+        <option value="8801408903465">01408903465</option>
+      </select>
+
+      <a id="order" class="pill yellow order" target="_blank" rel="noopener">
+        <img class="wa-icon" src="assets/whatsapp.png" alt=""> ORDER ON WHATSAPP ↗
+      </a>
+      <p class="note">bKash &amp; Nagad: 01708331114. Confirm payment details before sending.</p>
+
+      <div class="review-area">
+        <h3>CUSTOMER REVIEWS</h3>
+        <div id="reviews"></div>
+        <form id="reviewform">
+          <input id="name" placeholder="Your name" required maxlength="50">
+          <select id="rating" aria-label="Rating">
+            <option value="5">★★★★★ — 5 stars</option>
+            <option value="4">★★★★☆ — 4 stars</option>
+            <option value="3">★★★☆☆ — 3 stars</option>
+            <option value="2">★★☆☆☆ — 2 stars</option>
+            <option value="1">★☆☆☆☆ — 1 star</option>
+          </select>
+          <textarea id="comment" placeholder="Write your review" required rows="3" maxlength="500"></textarea>
+          <button class="pill yellow" type="submit">POST REVIEW ↗</button>
+          <p class="note">Reviews are stored on this device only, not shared publicly.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
